@@ -1,0 +1,32 @@
+{
+  "name": "satpro-hub/oauth-server",
+  "description": "OAuthServer for api services",
+  "type": "library",
+  "keywords": [
+    "oauth-server",
+    "gresm"
+  ],
+  "authors": [
+    {
+      "name": "satpro-hub"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^9.0|^10.0",
+    "laravel/passport": "^11.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "Satpro\\OAuthServer\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Satpro\\OAuthServer\\OAuthServerServiceProvider"
+      ]
+    }
+  }
+}
